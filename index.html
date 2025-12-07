@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Maker</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <input type="number" id="height" placeholder="whats the height of the tree?" value="100">
+<label for="type">Choose one:</label>
+<select id="type">
+  <option value="regular">Regular</option>
+  <option value="pine">Pine</option>
+</select>
+<button id="summon" onclick="create(treeHeight, treeType);">Summon</button>
+<br/>
+<label for="delete">delete a tree:</label>
+<select id="delete">
+</select>
+<button id="deleteButton" onclick="mainOnclick();">delete</button>
+<div id="trees"></div>
+</body>
+</html>
