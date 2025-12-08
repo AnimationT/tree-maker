@@ -33,13 +33,8 @@ setInterval(function () {
   deleteValue = $("#delete").val();
   mainOnclick = () => onclicks["onclick" + deleteValue];
   mainOnclick = function () {
-    if (treeNum > 0) {
       $("#"+deleteValue).remove();
-      $("#tree"+treeNum).remove();
-    treeNum--;
-    } else {
-
-    }
+      $("#tree"+deleteValue).remove();
   }
 });
 
